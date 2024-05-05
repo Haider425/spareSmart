@@ -1,0 +1,16 @@
+$color-primary: #ffffff;
+$color-background: #252829;
+$color-secondary: #1A2634;
+$color-trinary: #d4b144;
+$color-font: #060606;
+//import mena
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$font-family: 'Montserrat', sans-serif;
+
+
+@mixin flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

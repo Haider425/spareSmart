@@ -1,0 +1,22 @@
+@import "variables";
+
+@import "header";
+@import "section01";
+@import "section02";
+@import "section03";
+@import "section04";
+
+@import "footer";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font-family;
+    color: $color-font;
+    background-color: $color-background;
+}
