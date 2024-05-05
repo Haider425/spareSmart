@@ -86,7 +86,7 @@
     }
 
     .toggle_btn{
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         color: $color-font;
         cursor: pointer;
         display: none;
@@ -119,11 +119,13 @@
       border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
       a{
+        text-align: center;
         text-decoration: none;
         color: $color-font;
         font-size: 1.125rem;
-        &:hover{
-          color: $color-secondary;
+        width: 100%;
+        &:active{
+          color: $color-trinary;
         }
       }
     }
@@ -142,7 +144,7 @@
       width: 100%;
 
       &:active{
-        background: $color-secondary;
+        background: $color-trinary;
       }
     }
     
