@@ -16,10 +16,6 @@
     />
     <link rel="icon" href="images/tabIcon.png" type="image/x-icon" />
     <link rel="stylesheet" href="scss/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
@@ -29,6 +25,12 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
     <script src="js/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
     <title>spareSmart</title>
   </head>
   <body>
@@ -64,141 +66,108 @@
     </header>
 
     <section class="slideshow">
-      <div class="slideshow-inner">
-        <div class="swiper-wrapper slides">
-          <div class="swiper-slide slide is-active">
-            <div class="slide-content">
-              <div class="caption">
-                <div class="title">Aerospace</div>
-                <div class="text">
-                  <p>
-                    Supplying spare parts, repair services, and technical
-                    support for aerospace. Committed to excellence with
-                    experienced professionals.
-                  </p>
+        <div class="slideshow-inner">
+          <div class="slides">
+            <div class="slide is-active ">
+              <div class="slide-content">
+                <div class="caption">
+                  <div class="title">Aerospace</div>
+                  <div class="text">
+                    <p>
+                        Supplying spare parts, repair services, and technical support for aerospace. Committed to excellence with experienced professionals.
+                    </p>
+                  </div> 
+                  <a href="#" class="btn">
+                    <span class="btn-inner">Learn More</span>
+                  </a>
                 </div>
-                <a href="#" class="btn">
-                  <span class="btn-inner">Learn More</span>
-                </a>
+              </div>
+              <div class="image-container"> 
+                <img src="images/planeImg.jpg" alt="" class="image" />
               </div>
             </div>
-            <div class="image-container">
-              <img src="images/planeImg.jpg" alt="" class="image" />
-            </div>
-          </div>
-          <div class="swiper-slide slide">
-            <div class="slide-content">
-              <div class="caption">
-                <div class="title">Railways</div>
-                <div class="text">
-                  <p>
-                    Supplying spare parts, repair services, and technical
-                    support for railways. Committed to excellence with
-                    experienced professionals.
-                  </p>
+            <div class="slide">
+              <div class="slide-content">
+                <div class="caption">
+                  <div class="title">Railways</div>
+                  <div class="text">
+                    <p>
+                        Supplying spare parts, repair services, and technical support for railways. Committed to excellence with experienced professionals.
+                    </p>
+                  </div> 
+                  <a href="#" class="btn">
+                    <span class="btn-inner">Learn More</span>
+                  </a>
                 </div>
-                <a href="#" class="btn">
-                  <span class="btn-inner">Learn More</span>
-                </a>
+              </div>
+              <div class="image-container">
+                <img src="images/trainImg.jpg" alt="" class="image" />
               </div>
             </div>
-            <div class="image-container">
-              <img src="images/trainImg.jpg" alt="" class="image" />
-            </div>
-          </div>
-          <div class="swiper-slide slide">
-            <div class="slide-content">
-              <div class="caption">
-                <div class="title">Industrial</div>
-                <div class="text">
-                  <p>
-                    Supplying spare parts, repair services, and technical
-                    support for industrial machinery. Committed to excellence
-                    with experienced professionals.
-                  </p>
+            <div class="slide">
+              <div class="slide-content">
+                <div class="caption">
+                  <div class="title">Industrial</div>
+                  <div class="text">
+                    <p>
+                        Supplying spare parts, repair services, and technical support for industrial machinery. Committed to excellence with experienced professionals.
+                    </p>
+                  </div> 
+                  <a href="#" class="btn">
+                    <span class="btn-inner">Learn More</span>
+                  </a>
                 </div>
-                <a href="#" class="btn">
-                  <span class="btn-inner">Learn More</span>
-                </a>
+              </div>
+              <div class="image-container">
+                <img src="images/factoryImg.jpg" alt="" class="image" />
               </div>
             </div>
-            <div class="image-container">
-              <img src="images/factoryImg.jpg" alt="" class="image" />
+          </div>
+          <div class="pagination">
+            <div class="item is-active"> 
+              <span class="icon">1</span>
+            </div>
+            <div class="item">
+              <span class="icon">2</span>
+            </div>
+            <div class="item">
+              <span class="icon">3</span>
+            </div>
+            
+          </div>
+          <div class="arrows">
+            <div class="arrow prev">
+              <span class="svg svg-arrow-left">
+                <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+                <span class="alt sr-only"></span>
+              </span>
+            </div>
+            <div class="arrow next">
+              <span class="svg svg-arrow-right">
+                <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+                <span class="alt sr-only"></span>
+              </span>
             </div>
           </div>
-        </div>
-        <div class="pagination">
-          <div class="item is-active">
-            <span class="icon">1</span>
-          </div>
-          <div class="item">
-            <span class="icon">2</span>
-          </div>
-          <div class="item">
-            <span class="icon">3</span>
-          </div>
-        </div>
-        <div class="arrows">
-          <div class="arrow prev">
-            <span class="svg svg-arrow-left">
-              <svg
-                version="1.1"
-                id="svg4-Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                width="14px"
-                height="26px"
-                viewBox="0 0 14 26"
-                enable-background="new 0 0 14 26"
-                xml:space="preserve"
-              >
-                <path
-                  d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"
-                />
-              </svg>
-              <span class="alt sr-only"></span>
-            </span>
-          </div>
-          <div class="arrow next">
-            <span class="svg svg-arrow-right">
-              <svg
-                version="1.1"
-                id="svg5-Layer_1"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-                x="0px"
-                y="0px"
-                width="14px"
-                height="26px"
-                viewBox="0 0 14 26"
-                enable-background="new 0 0 14 26"
-                xml:space="preserve"
-              >
-                <path
-                  d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"
-                />
-              </svg>
-              <span class="alt sr-only"></span>
-            </span>
-          </div>
-        </div>
-      </div>
-    </section>
+        </div> 
+      </section>
   </body>
 
   <script>
-    const swiper = new Swiper(".slideshow .slides", {
+    // Initialize Swiper
+    var swiper = new Swiper('.slideshow-inner', {
+      direction: 'horizontal',
       loop: true,
       pagination: {
-        el: ".slideshow .pagination",
+        el: '.pagination',
         clickable: true,
       },
       navigation: {
-        nextEl: ".slideshow .arrow.next",
-        prevEl: ".slideshow .arrow.prev",
+        nextEl: '.next',
+        prevEl: '.prev',
       },
+      touch: true, // Enable touch/swipe
     });
   </script>
+  
 </html>
