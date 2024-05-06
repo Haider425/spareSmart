@@ -232,4 +232,46 @@ if($('.main-content .slideshow').length > 1) {
 
 
 
-        
+const slideshow = document.querySelector('.slideshow');
+const slides = document.querySelectorAll('.slide');
+let currentSlide = 0;
+let startX, endX;
+
+// Add touch event listeners
+slideshow.addEventListener('touchstart', handleTouchStart);
+slideshow.addEventListener('touchmove', handleTouchMove);
+slideshow.addEventListener('touchend', handleTouchEnd);
+
+function handleTouchStart(event) {
+  startX = event.touches[0].clientX;
+}
+
+function handleTouchMove(event) {
+  event.preventDefault(); // Prevent default touch behavior (e.g., scrolling)
+}
+
+function handleTouchEnd(event) {
+  endX = event.changedTouches[0].clientX;
+  const threshold = 50; // Adjust threshold as needed
+  const deltaX = endX - startX;
+
+  if (deltaX > threshold) {
+    // Swipe left
+    showPreviousSlide();
+  } else if (deltaX < -threshold) {
+    // Swipe right
+    showNextSlide();
+  }
+}
+
+function showPreviousSlide() {
+  slides[currentSlide].classList.remove('is-active');
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  slides[currentSlide].classList.add('is-active');
+}
+
+function showNextSlide() {
+  slides[currentSlide].classList.remove('is-active');
+  currentSlide = (currentSlide + 1) % slides.length;
+  slides[currentSlide].classList.add('is-active');
+}
