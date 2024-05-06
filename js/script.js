@@ -229,3 +229,22 @@ slideshow.data('timeout',timeout);
 if($('.main-content .slideshow').length > 1) {
   $(window).on('scroll',homeSlideshowParallax);
 }
+
+//swiping
+
+slideshow.on('touchstart',function(event){
+    var xStart=event.originalEvent.touches[0].pageX;
+    $(this).on('touchmove',function(event){
+        var xEnd=event.originalEvent.touches[0].pageX;
+        $(this).off('touchmove');
+        if(xStart+10>xEnd){
+        slideshowNext($(this),false);
+        } else if(xStart-10<xEnd){
+        slideshowNext($(this),true);
+        }
+    });
+    }
+    
+        );
+
+        
