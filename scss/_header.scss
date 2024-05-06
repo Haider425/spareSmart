@@ -19,7 +19,7 @@
         text-decoration: none;
 
         img {
-            width: 175px;
+            width: 11rem;
             height: auto;
             cursor: pointer;
           }
@@ -178,6 +178,42 @@
             }
 
         }
+    }
+
+    @media screen and (min-width: 2560px) {
+
+        .navbar {
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+            .logo{
+              a{
+                img{
+                    width: 15.6rem;
+                }
+              }
+            }
+
+            nav {
+                max-width: 60%;
+
+                ul {
+                    li {
+                        font-size: 2rem;
+                    }
+                }
+            }
+
+            .button {
+                padding: 1rem 2.5rem;
+                font-size: 1.5rem;
+            }
+
+        }
+
+
+
+      
     }
     
     @media screen and (max-width: 768px){

@@ -29,6 +29,16 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
     <title>spareSmart</title>
@@ -66,124 +76,226 @@
     </header>
 
     <section class="slideshow">
-        <div class="slideshow-inner">
-          <div class="slides">
-            <div class="slide is-active ">
-              <div class="slide-content">
-                <div class="caption">
-                  <div class="title">Aerospace</div>
-                  <div class="text">
-                    <p>
-                        Supplying spare parts, repair services, and technical support for aerospace. Committed to excellence with experienced professionals.
-                    </p>
-                  </div> 
-                  <a href="#" class="btn">
-                    <span class="btn-inner">Learn More</span>
-                  </a>
-                </div>
-              </div>
-              <div class="image-container"> 
-                <img src="images/planeImg.jpg" alt="" class="image" />
-              </div>
-            </div>
-            <div class="slide">
-              <div class="slide-content">
-                <div class="caption">
-                  <div class="title">Railways</div>
-                  <div class="text">
-                    <p>
-                        Supplying spare parts, repair services, and technical support for railways. Committed to excellence with experienced professionals.
-                    </p>
-                  </div> 
-                  <a href="#" class="btn">
-                    <span class="btn-inner">Learn More</span>
-                  </a>
-                </div>
-              </div>
-              <div class="image-container">
-                <img src="images/trainImg.jpg" alt="" class="image" />
-              </div>
-            </div>
-            <div class="slide">
-              <div class="slide-content">
-                <div class="caption">
-                  <div class="title">Industrial</div>
-                  <div class="text">
-                    <p>
-                        Supplying spare parts, repair services, and technical support for industrial machinery. Committed to excellence with experienced professionals.
-                    </p>
-                  </div> 
-                  <a href="#" class="btn">
-                    <span class="btn-inner">Learn More</span>
-                  </a>
-                </div>
-              </div>
-              <div class="image-container">
-                <img src="images/factoryImg.jpg" alt="" class="image" />
-              </div>
-            </div>
-          </div>
-          <div class="pagination">
-            <div class="item is-active"> 
-              <span class="icon">1</span>
-            </div>
-            <div class="item">
-              <span class="icon">2</span>
-            </div>
-            <div class="item">
-              <span class="icon">3</span>
-            </div>
-            
-          </div>
-          <div class="arrows">
-            <div class="arrow prev">
-              <span class="svg svg-arrow-left">
-                <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
-                <span class="alt sr-only"></span>
-              </span>
-            </div>
-            <div class="arrow next">
-              <span class="svg svg-arrow-right">
-                <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
-                <span class="alt sr-only"></span>
-              </span>
-            </div>
-          </div>
-        </div> 
-      </section>
-
-      <section class="about">
-        <div class="container">
-            <div class="image">
-                <img src="images/factoryImg.jpg" alt="">
-            </div>
-
-            <div class="content">
-                <div class="title">
-                    <h2>About Us</h2>
-                </div>
+      <div class="slideshow-inner">
+        <div class="slides">
+          <div class="slide is-active">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Aerospace</div>
                 <div class="text">
-                    <p>
-                        SpareSmart is your top-tier source for aerospace, railway, and industrial machinery parts, repairs, and support. Our seasoned professionals ensure excellence and customer satisfaction through superior products and services. With a wide range of offerings, we tailor solutions to your needs. Experience our commitment to quality by contacting us today.
-
-                    </p>
+                  <p>
+                    Supplying spare parts, repair services, and technical
+                    support for aerospace. Committed to excellence with
+                    experienced professionals.
+                  </p>
                 </div>
-                <div class="quote">
-                    <p>
-                        "We are committed to excellence with experienced professionals."
-                    </p>
-                </div>
-                <button class="full-rounded">
-                    <span>Hover me</span>
-                    <div class="border full-rounded"></div></button>
+                <a href="#" class="btn">
+                  <span class="btn-inner">Learn More</span>
+                </a>
+              </div>
             </div>
-
+            <div class="image-container">
+              <img src="images/planeImg.jpg" alt="" class="image" />
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Railways</div>
+                <div class="text">
+                  <p>
+                    Supplying spare parts, repair services, and technical
+                    support for railways. Committed to excellence with
+                    experienced professionals.
+                  </p>
+                </div>
+                <a href="#" class="btn">
+                  <span class="btn-inner">Learn More</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="images/trainImg.jpg" alt="" class="image" />
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-content">
+              <div class="caption">
+                <div class="title">Industrial</div>
+                <div class="text">
+                  <p>
+                    Supplying spare parts, repair services, and technical
+                    support for industrial machinery. Committed to excellence
+                    with experienced professionals.
+                  </p>
+                </div>
+                <a href="#" class="btn">
+                  <span class="btn-inner">Learn More</span>
+                </a>
+              </div>
+            </div>
+            <div class="image-container">
+              <img src="images/factoryImg.jpg" alt="" class="image" />
+            </div>
+          </div>
         </div>
-      </section>
+        <div class="pagination">
+          <div class="item is-active">
+            <span class="icon">1</span>
+          </div>
+          <div class="item">
+            <span class="icon">2</span>
+          </div>
+          <div class="item">
+            <span class="icon">3</span>
+          </div>
+        </div>
+        <div class="arrows">
+          <div class="arrow prev">
+            <span class="svg svg-arrow-left">
+              <svg
+                version="1.1"
+                id="svg4-Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="14px"
+                height="26px"
+                viewBox="0 0 14 26"
+                enable-background="new 0 0 14 26"
+                xml:space="preserve"
+              >
+                <path
+                  d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"
+                />
+              </svg>
+              <span class="alt sr-only"></span>
+            </span>
+          </div>
+          <div class="arrow next">
+            <span class="svg svg-arrow-right">
+              <svg
+                version="1.1"
+                id="svg5-Layer_1"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                x="0px"
+                y="0px"
+                width="14px"
+                height="26px"
+                viewBox="0 0 14 26"
+                enable-background="new 0 0 14 26"
+                xml:space="preserve"
+              >
+                <path
+                  d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"
+                />
+              </svg>
+              <span class="alt sr-only"></span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <section class="services">
-        
-      </section>
+    <section class="about">
+      <div class="container">
+        <div class="image">
+          <img src="images/factoryImg.jpg" alt="" />
+        </div>
+
+        <div class="content">
+          <div class="title">
+            <h2>About Us</h2>
+          </div>
+          <div class="text">
+            <p>
+              SpareSmart is your top-tier source for aerospace, railway, and
+              industrial machinery parts, repairs, and support. Our seasoned
+              professionals ensure excellence and customer satisfaction through
+              superior products and services. With a wide range of offerings, we
+              tailor solutions to your needs. Experience our commitment to
+              quality by contacting us today.
+            </p>
+          </div>
+          <div class="quote">
+            <p>
+              "We are committed to excellence with experienced professionals."
+            </p>
+          </div>
+          <button class="full-rounded">
+            <span>Hover me</span>
+            <div class="border full-rounded"></div>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="parallax">
+      <div class="container">
+        <div class="title">
+          <h2>Our Services and Products</h2>
+        </div>
+        <div class="products">
+          <div class="first">
+            <div class="card">
+              <img
+                src="images/verticalPlane.jpg"
+                alt="Plane Image"
+              />
+              <div class="card-content">
+                <h2>Aerospace</h2>
+              
+                <a href="#" class="button">
+                  Find out more
+                  <span class="material-symbols-outlined">
+                    arrow_right_alt
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="second">
+            <div class="card">
+              <img
+                src="images/verticalTrain.jpg"
+                alt="Train Image"
+              />
+              <div class="card-content">
+                <h2>Railways</h2>
+               
+                <a href="#" class="button">
+                  Find out more
+                  <span class="material-symbols-outlined">
+                    arrow_right_alt
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="third">
+            <div class="card">
+              <img
+                src="images/verticalFactory.jpg"
+                alt="Factory Image"
+              />
+              <div class="card-content">
+                <h2>Industrial</h2>
+               
+                <a href="#" class="button">
+                  Find out more
+                  <span class="material-symbols-outlined">
+                    arrow_right_alt
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
   </body>
-
 </html>
