@@ -41,10 +41,11 @@
 .navbar nav a {
   color: #060606;
   text-decoration: none;
+  font-weight: bold;
   padding: 1rem;
 }
 .navbar nav a:hover {
-  color: #1A2634;
+  color: #082548;
 }
 .navbar .button {
   color: #fff;
@@ -437,6 +438,167 @@
   }
   .slideshow-inner .arrows {
     display: none;
+  }
+}
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+.about .container {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 3rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  max-height: 100%;
+}
+.about .container .image {
+  width: 50%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 15px;
+}
+.about .container .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 15px;
+}
+.about .container .content {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+  padding-left: 1.5rem;
+}
+.about .container .content .title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.about .container .content .title h2 {
+  font-weight: normal;
+}
+.about .container .content .text {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  color: #060606;
+  line-height: 1.4;
+}
+.about .container .content .quote {
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+  background-color: rgba(8, 37, 72, 0.2);
+  padding: 1rem;
+  max-width: 100%;
+  transform: skew(-10deg);
+  position: relative;
+}
+.about .container .content .quote:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -1px;
+  width: 2px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #000;
+  transform: translateY(-50%);
+}
+.about .container .content button {
+  font-size: 16px;
+  position: relative;
+  margin: auto;
+  padding: 1em 2.5em 1em 2.5em;
+  border: none;
+  background: #082548;
+  transition: all 0.1s linear;
+  box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+}
+.about .container .content button:active {
+  transform: scale(0.95);
+}
+.about .container .content button span {
+  color: #fff;
+}
+.about .container .content button .border {
+  position: absolute;
+  border: 0.15em solid #082548;
+  transition: all 0.3s 0.08s linear;
+  top: 50%;
+  left: 50%;
+  width: 9em;
+  height: 3em;
+  transform: translate(-50%, -50%);
+}
+.about .container .content button:hover .border {
+  display: block;
+  width: 9.9em;
+  height: 3.7em;
+}
+.about .container .content .full-rounded {
+  border-radius: 0.2em;
+}
+
+@media screen and (max-width: 768px) {
+  .about .container .image {
+    width: 100%;
+    height: 50%;
+  }
+  .about .container .content {
+    width: 100%;
+    height: 50%;
+    padding: 1rem;
+    padding-left: 1.5rem;
+  }
+  .about .container .content .title {
+    font-size: 1.5rem;
+  }
+  .about .container .content .text {
+    font-size: 1rem;
+  }
+  .about .container .content .quote {
+    font-size: 1rem;
+  }
+  .about .container .content button {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 425px) {
+  .about .container {
+    margin: 0;
+    padding: 1rem;
+  }
+  .about .container .image {
+    width: 100%;
+    height: auto;
+  }
+  .about .container .content {
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    padding-left: 1.5rem;
+  }
+  .about .container .content .title {
+    font-size: 1.5rem;
+  }
+  .about .container .content .text {
+    font-size: 1rem;
+  }
+  .about .container .content .quote {
+    font-size: 1rem;
+  }
+  .about .container .content button {
+    font-size: 14px;
   }
 }
 * {
