@@ -159,7 +159,7 @@
       .text {
         margin: 0 auto;
         max-width: 1000px;
-        font-size: 18px;
+        font-size: 1.125rem;
         line-height: 1.4;
       }
   
@@ -277,29 +277,68 @@
 }
 
 @media screen and (max-width: 768px) {
-  .slide-content {
-    .title {
-      font-size: 30px;
+    .btn{
+        padding: 10px 15px;
     }
-  
-    .text {
-      font-size: 14px;
+
+    .slideshow{
+
+        .slide{
+
+            .caption{
+                padding: 0 50px;
+            }
+            .title{
+                font-size: 3rem;
+                letter-spacing: 0.1rem;
+            }
+
+            .text{
+                font-size: 1rem;
+                
+
+            }
+        }
+
+
     }
-  }
+
+    .slideshow-inner{
+        .arrows{
+            display: none;
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
-  .slide-content {
-    .title {
-      font-size: 20px;
-    }
-  
-    .text {
-      font-size: 12px;
+    .btn{
+        padding: 10px 15px;
     }
 
-    .btn {
-      padding: 10px 15px;
+    .slideshow{
+
+        .slide{
+
+            .caption{
+                padding: 0 50px;
+            }
+            .title{
+                font-size: 3rem;
+                letter-spacing: 0.1rem;
+            }
+
+            .text{
+                font-size: 1rem;
+                
+
+            }
+        }
     }
-  }
+
+    .slideshow-inner{
+        .arrows{
+            display: none;
+        }
+    }
+    
 }

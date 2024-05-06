@@ -7,7 +7,7 @@
   justify-content: center;
   align-items: center;
   max-width: 100%;
-  padding: 0rem;
+  padding: 0.25rem;
   padding-left: 1.75rem;
   padding-right: 1.75rem;
   justify-content: space-between;
@@ -17,8 +17,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  position: relative;
-  top: 0.4rem;
 }
 .navbar .logo a {
   text-decoration: none;
@@ -309,7 +307,7 @@
 .slideshow .slide .text {
   margin: 0 auto;
   max-width: 1000px;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 1.4;
 }
 .slideshow .slide .btn {
@@ -406,22 +404,39 @@
   }
 }
 @media screen and (max-width: 768px) {
-  .slide-content .title {
-    font-size: 30px;
+  .btn {
+    padding: 10px 15px;
   }
-  .slide-content .text {
-    font-size: 14px;
+  .slideshow .slide .caption {
+    padding: 0 50px;
+  }
+  .slideshow .slide .title {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+  }
+  .slideshow .slide .text {
+    font-size: 1rem;
+  }
+  .slideshow-inner .arrows {
+    display: none;
   }
 }
 @media screen and (max-width: 480px) {
-  .slide-content .title {
-    font-size: 20px;
-  }
-  .slide-content .text {
-    font-size: 12px;
-  }
-  .slide-content .btn {
+  .btn {
     padding: 10px 15px;
+  }
+  .slideshow .slide .caption {
+    padding: 0 50px;
+  }
+  .slideshow .slide .title {
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+  }
+  .slideshow .slide .text {
+    font-size: 1rem;
+  }
+  .slideshow-inner .arrows {
+    display: none;
   }
 }
 * {
