@@ -1132,6 +1132,165 @@
     border-radius: 0.2em;
   }
 }
+.formSection {
+  display: flex;
+  flex-wrap: wrap;
+}
+.formSection .parallax02 {
+  width: 100%;
+  background-image: url("../images/parallaxImg02.jpg");
+  min-height: 500px; /* Adjust the height as needed */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.formSection .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+}
+.formSection .container .text {
+  width: 35%;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.formSection .container .text .title {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.formSection .container .text .title h2 {
+  font-weight: bold;
+  color: #082548;
+}
+.formSection .container .text .description {
+  text-align: center;
+}
+.formSection .container .text .description p {
+  font-size: 1.125rem;
+  color: #fff;
+  font-weight: normal;
+  line-height: 1.4;
+}
+.formSection .container .text .hidden {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.formSection .container .text .hidden p {
+  color: #04ff00;
+  font-size: 1.25rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+.formSection .container .text .hidden #hidden02 {
+  color: #ff0000;
+  font-size: 1.25rem;
+  padding: 1rem;
+  font-weight: bold;
+}
+.formSection .container .form {
+  width: 55%;
+  padding: 1rem;
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.formSection .container .form form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.formSection .container .form form input,
+.formSection .container .form form select {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #082548;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #060606;
+}
+.formSection .container .form form input:focus,
+.formSection .container .form form select:focus {
+  outline: none;
+  border: 1px solid #1A2634;
+}
+.formSection .container .form form button {
+  width: 20%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: none;
+  background: #082548;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  border-radius: 10px;
+}
+.formSection .container .form form button:active {
+  transform: scale(0.95);
+}
+.formSection .container .form form button:hover {
+  background: #1A2634;
+}
+
+@media screen and (max-width: 768px) {
+  .formSection .container .form form button {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 426px) {
+  .formSection .container {
+    flex-direction: column;
+  }
+  .formSection .container .text {
+    width: 100%;
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .formSection .container .text .title {
+    font-size: 1.25rem;
+    text-align: center;
+  }
+  .formSection .container .text .description {
+    text-align: center;
+  }
+  .formSection .container .text .description p {
+    font-size: 1rem;
+  }
+  .formSection .container .form {
+    width: 100%;
+    padding: 1rem;
+  }
+  .formSection .container .form form input,
+  .formSection .container .form form select {
+    width: 100%;
+  }
+  .formSection .container .form form button {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .formSection .container .text .title {
+    font-size: 2rem;
+  }
+  .formSection .container .text .description p {
+    font-size: 1.25rem;
+  }
+}
 * {
   margin: 0;
   padding: 0;
