@@ -1,0 +1,214 @@
+.footer {
+    max-width: 100%;
+    background: #10182F;
+    border-radius: 6px;
+    margin: 0 auto;
+    padding: 50px 50px;
+  }
+  .footer .footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 3.5rem;
+    
+  }
+  .footer-row .footer-col h4 {
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin-bottom: 18px;
+  }
+  .footer-col .links {
+    margin-top: 20px;
+  }
+  .footer-col .links li {
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  .footer-col .links li a {
+    text-decoration: none;
+    color: #bfbfbf;
+  }
+  .footer-col .links li a:hover {
+    color: #fff;
+  }
+  .footer-col p {
+    color: #bfbfbf;
+    max-width: 300px;
+    line-height: 1.4;
+    margin-left: 10px;
+    
+  }
+
+  .footer-col i{
+    color: #fff;
+    margin-right: 5px;
+    font-size: 1rem;
+  }
+
+  .footer-col .email {
+    display: flex;
+    flex-direction: row;    
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .footer-col .email p{
+    color: #bfbfbf;
+    border: 1px solid #bfbfbf;
+    padding: 10px;
+    border-radius: 6px;
+    width: 70%;
+    caret-color: #fff;
+    
+  }
+
+   .footer-col .email button {
+    background: #fff;
+    outline: none;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.2s ease;
+    width: 30%;
+    margin-left: 10px;
+    
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    &:hover {
+        background: #cecccc;
+    }
+  }
+  .footer-col .icons {
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .footer-col .icons i {
+    color: #afb6c7;
+  }
+  .footer-col .icons i:hover  {
+    color: #fff;
+  }
+  @media screen and (max-width: 426px) {
+    .footer {
+      position: relative;
+      bottom: 0;
+      left: 0;
+      transform: none;
+      width: 100%;
+      border-radius: 0;
+    }
+    .footer .footer-row {
+      padding: 20px;
+      gap: 1rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-col .email {
+      display: block;
+      text-align: center;
+      gap: 1rem;
+    }
+
+    .footer-col {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-col h4{
+        margin-bottom: 20px;
+        font-weight: bolder;
+    }
+
+    .footer-col .icons{
+      justify-content: center;
+    }
+
+    .footer p{
+        margin: 0;
+    }
+
+    .footer-col .email p {
+      width: 100%;
+    }
+    .footer-col .email :where(input, button) {
+      width: 100%;
+    }
+    .footer-col .email button {
+      margin: 10px 0 0 0;
+    }
+  }
+
+
+@media screen and (max-width: 1024px){
+    .footer{
+        padding: 50px 20px;
+    }
+    .footer .footer-row{
+        gap: 1rem;
+    }
+    .footer-col .email p{
+        width: 100%;
+    }
+    .footer-col{
+        text-align: center;
+        justify-content: center;
+    }
+    .footer-col .email button{
+        width: 100%;
+    }
+    .footer-col .icons{
+        justify-content: center;
+    }
+    .footer-col .icons i{
+        font-size: 1.5rem;
+    }
+    .footer-col .icons i:hover{
+        color: #fff;
+    }
+    .footer-col .email{
+        display: block;
+        text-align: center;
+        gap: 1rem;
+    }
+    .footer-col h4{
+        margin-bottom: 20px;
+        font-weight: bolder;
+    }
+    .footer-col .links{
+        text-align: center;
+    }
+    .footer-col .links li{
+        margin: 0;
+    }
+    .footer-col .links li a{
+        font-size: 1rem;
+
+    }
+    .footer-col p, .footer-col a{
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    .footer-col .email p{
+        font-size: 1rem;
+    }
+    .footer-col .email button{
+        font-size: 1rem;
+        margin-top: 1rem;
+    }
+
+    .footer-col .icons i{
+        gap: 1rem;
+        font-size: 1rem;
+    }
+    
+}
