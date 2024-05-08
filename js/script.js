@@ -81,8 +81,8 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-var slideshowDuration = 4000;
-var slideshow=$('.main-content .slideshow');
+var slideshowDuration = 3000;
+var slideshow=$('.slideshow');
 
 function slideshowSwitch(slideshow,index,auto){
   if(slideshow.data('wait')) return;

@@ -1291,6 +1291,81 @@
     font-size: 1.25rem;
   }
 }
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #082548;
+  width: 100%;
+  height: 30vh;
+  padding: 0;
+}
+.breadcrumbs .breadcrumb {
+  position: relative; /* Ensure positioning context */
+  width: 100%;
+  display: flex;
+  max-height: 100%;
+  background-color: #1A2634;
+}
+.breadcrumbs .breadcrumb .image {
+  width: 100%;
+  height: auto;
+}
+.breadcrumbs .breadcrumb .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.breadcrumbs .breadcrumb .text {
+  position: absolute; /* Position text relative to parent */
+  top: 50%; /* Adjust as needed */
+  left: 12%; /* Adjust as needed */
+  transform: translate(-50%, -50%); /* Center horizontally and vertically */
+  z-index: 2; /* Ensure text appears above image */
+  color: #fff; /* Set text color */
+  font-size: 0.8rem;
+}
+.breadcrumbs .breadcrumb .text a {
+  text-decoration: none; /* Remove underline from links */
+  color: #fff; /* Set link color */
+}
+.breadcrumbs .breadcrumb .text a:hover {
+  color: #ffffff; /* Change link color on hover */
+}
+.breadcrumbs .breadcrumb .text a:visited {
+  color: #ffffff; /* Change link color for visited links */
+}
+.breadcrumbs .breadcrumb .text h3 {
+  font-size: 2.25rem;
+  margin-top: 2rem;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 0.75rem;
+  border-bottom-width: 3px;
+}
+
+.aboutSection {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 2rem;
+  background-color: #1A2634;
+  color: #fff;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+  height: 100vh;
+}
+.aboutSection .container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  flex-direction: row;
+  background-color: #1A2634;
+}
+
 .footer {
   max-width: 100%;
   background: #10182F;
