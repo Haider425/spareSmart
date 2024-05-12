@@ -1,14 +1,18 @@
 @import "variables";
 
 @import "header";
-@import "home/section01";
-@import "home/section02";
-@import "home/section03";
-@import "home/section04";
-@import "home/section05";
-@import "about/about";  
+@import "section01";
+@import "section02";
+@import "section03";
+@import "section04";
+@import "section05";
+@import "loader";
+@import "about";  
+@import "contact";
 
 @import "footer";
+
+@import "404Page";
 
 
 *{
@@ -20,7 +24,7 @@
 body{
     font-family: $font-family;
     color: $color-font;
-    background-color: $color-background;
-    
+    background-color: #fff;
+
     -webkit-font-smoothing: antialiased;
 }

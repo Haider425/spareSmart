@@ -1,0 +1,191 @@
+.inquiry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-primary;
+
+
+    .container{
+        width: 100%;
+        display: flex;
+        height: 100%;
+        padding: 1rem;
+        justify-content: center;
+
+        .text{
+            width: 75%;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            padding: 1rem;
+            padding-left: 5rem;
+
+            .title{
+                font-size: 1.2rem;
+                margin-bottom: 1rem;
+                h2{
+                    font-weight: bold;
+                    color: $color-trinary;
+                }
+            }
+
+
+            .description{
+                
+                p{
+                font-size: 1rem;
+                color: $color-trinary;
+                line-height: 1.2;
+                font-weight: bold;
+                }
+            }
+        }
+
+        button {
+            font-size: 1rem;
+            position: relative;
+            margin: auto;
+            padding: 1em 2.5em 1em 2.5em;
+            border: none;
+            background: $color-trinary;
+            transition: all 0.1s linear;
+            box-shadow: 0 0.4em 1em rgba(0, 0, 0, 0.1);
+           }
+           
+           button:active {
+            transform: scale(0.95);
+           }
+           
+           button span {
+            color: #fff;
+           }
+           
+           button .border {
+            position: absolute;
+            border: 0.15em solid $color-trinary;
+            transition: all 0.3s 0.08s linear;
+            top: 50%;
+            left: 50%;
+            width: 6em;
+            height: 3em;
+            transform: translate(-50%, -50%);
+           }
+           
+           button:hover .border {
+            display: block;
+            width: 9em;
+            height: 3.7em;
+           }
+           
+           .full-rounded {
+            border-radius: .2em;
+           }
+    }
+}
+
+@media screen and (max-width: 770px){
+    .inquiry{
+        .container{
+            .text{
+                .title{
+                    font-size: 1rem;
+                }
+
+                .description{
+                    p{
+                        font-size: .8rem;
+                    }
+                }
+            }
+
+            button{
+                font-size: .8rem;
+                padding: .75em 1.75em .75em 1.75em;
+
+                .border {
+                    position: absolute;
+                    border: 0.15em solid $color-trinary;
+                    transition: all 0.3s 0.08s linear;
+                    top: 50%;
+                    left: 50%;
+                    width: 4em;
+                    height: 2em;
+                    transform: translate(-50%, -50%);
+                   }
+                
+                   &:hover .border {
+                    display: block;
+                    width: 7.5em;
+                    height: 3.25em;
+
+                    .full-rounded {
+                        border-radius: .2em;
+                       }
+            }
+
+        
+    }
+}
+}
+    
+}
+
+
+
+@media screen and (max-width: 426px){
+    .inquiry{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: .5rem;
+
+            .text{
+                width: 100%;
+                padding: .5rem;
+                .title{
+                    font-size: 1rem;
+                    margin-bottom: .5rem;
+                    text-align: center;
+                    h2{
+                        font-weight: bold;
+                        color: $color-trinary;
+                    }
+                }
+
+                .description{
+                    text-align: center;
+                    padding: .5rem;
+                    p{
+                        font-size: .8rem;
+
+                    }
+                }
+            }
+
+            button{
+                font-size: .8rem;
+                padding: .75em 1.75em .75em 1.75em;
+            }
+
+            button .border {
+                width: 6em;
+                height: 2em;
+            }
+
+            button:hover .border {
+                width: 8.4em;
+                height: 3.25em;
+            }
+
+            .full-rounded {
+                border-radius: .2em;
+            }
+        }
+    }
+    
+}

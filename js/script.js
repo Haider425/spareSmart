@@ -7,78 +7,7 @@ togglebtn.addEventListener("click", () => {
   togglebtnIcon.classList.toggle("fa-times");
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const form = document.querySelector(".form form");
-  const hiddenDiv = document.getElementById("hidden");
-  const hiddenDiv02 = document.getElementById("hidden02");
 
-  form.addEventListener("submit", async function (event) {
-    event.preventDefault(); // Prevent the form from submitting by default
-
-    // Get form inputs
-    const nameInput = form.querySelector('input[name="name"]');
-    const serviceInput = form.querySelector('select[name="service"]');
-    const emailInput = form.querySelector('input[name="email"]');
-    const phoneInput = form.querySelector('input[name="phone"]');
-
-    // Check if JavaScript is enabled and handle form submission asynchronously
-    if (window.fetch) {
-      const formData = new FormData(this);
-
-      try {
-        const response = await fetch("/submit_form", {
-          method: "POST",
-          body: formData,
-        });
-
-        if (response.ok) {
-          // Update hidden div content
-
-          hiddenDiv.innerHTML = "Form submitted successfully!";
-
-          setTimeout(() => {
-            hiddenDiv.innerHTML = "";
-          }, 3000); // Set timeout to clear the content after 3 seconds (3000 milliseconds)
-
-          // Reset the form after successful submission
-          this.reset();
-        } else {
-          hiddenDiv02.innerHTML =
-            "An error occurred while submitting the form.";
-          setTimeout(() => {
-            hiddenDiv02.innerHTML = "";
-          }, 3000); // Set timeout to clear the content after 3 seconds (3000 milliseconds)
-        }
-      } catch (error) {
-        console.error("Error submitting form:", error);
-        hiddenDiv02.innerHTML =
-          "An error occurred while submitting the form.";
-        setTimeout(() => {
-          hiddenDiv02.innerHTML = "";
-        }, 3000); // Set timeout to clear the content after 3 seconds (3000 milliseconds)
-      }
-    } else {
-      // If JavaScript is disabled or not supported, submit the form with default behavior
-      // Check if inputs are empty
-      if (
-        nameInput.value === "" ||
-        serviceInput.value === "" ||
-        emailInput.value === "" ||
-        phoneInput.value === ""
-      ) {
-        // Update hidden div content
-        hiddenDiv.innerHTML = "Please fill out all fields.";
-        setTimeout(() => {
-          hiddenDiv.innerHTML = "";
-        }, 3000); // Set timeout to clear the content after 3 seconds (3000 milliseconds)
-        return;
-      }
-
-      // If all fields are filled, submit the form
-      form.submit();
-    }
-  });
-});
 
 
 var slideshowDuration = 3000;
@@ -330,3 +259,23 @@ function copyEmail() {
   }, 3000); 
 
 }
+
+
+//loader
+
+window.addEventListener('load', function() {
+  const loader = document.querySelector('.lds-ripple');
+  const content = document.querySelector('.overlay');
+
+  // Show the loader initially
+  loader.style.display = 'flex';
+  content.style.display = 'none';
+
+  // Hide the loader and show the content after the initial rendering
+  setTimeout(() => {
+    loader.style.display = 'none';
+    content.style.display = 'block';
+  }, 1000);
+});
+
+

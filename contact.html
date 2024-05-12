@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="icon" href="images/tabIcon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"
+      integrity="sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/sendEmail.js" defer></script>
+
+    <title>spareSmart</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="images/spareSmart_transparent1.png" alt="spareSmart"
+          /></a>
+        </div>
+        <nav>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="button">Request a Quote</button>
+
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <button class="button">Request a Quote</button>
+      </div>
+    </header>
+
+    <section class="breadcrumbs">
+      <div class="breadcrumb">
+        <div class="image">
+          <img src="images/contactImg.jpg" alt="about" />
+        </div>
+        <div class="text">
+          <a href="index.html">Home</a> > <a href="contact.html">Contact Us</a>
+          <h3>Contact Us</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container1">
+        <div class="content1">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Address</div>
+              <div class="text-one">7115 Rexwood Rd Unit#21,</div>
+              <div class="text-two">Mississauga, ON, L4T 4L3, Canada</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+647 123 4567</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">raftaar.1277@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Send us a message</div>
+
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              id="myForm"
+              onsubmit="resetForm()"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="7217601e-4bc0-438c-8513-3a4f204a180c"
+              />
+              <div class="input-box">
+                <input name="name" type="text" placeholder="Enter your name" />
+              </div>
+              <div class="input-box">
+                <input
+                  name="email"
+                  type="text"
+                  placeholder="Enter your email"
+                />
+              </div>
+              <div class="input-box">
+                <input name="phone" type="tel" placeholder="Enter your phone" />
+              </div>
+              <div class="input-box message-box">
+                <textarea
+                  name="textarea"
+                  placeholder="Enter your message"
+                ></textarea>
+              </div>
+              <div class="button">
+                <input class="button2" type="submit" value="Send Now" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe class="map-iframe" style="filter: invert(90%) hue-rotate(180deg);"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2887.073013292073!2d-79.6303666844976!3d43.70336607911969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2f3b3b3b3b3b%3A0x1b1b3b3b3b3b3b3b!2s7115%20Rexwood%20Rd%20Unit%2021%2C%20Mississauga%2C%20ON%20L4T%204L3%2C%20Canada!5e0!3m2!1sen!2sin!4v1633663660733!5m2!1sen!2sin"
+          width="80%"
+          height="400"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          
+        ></iframe>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>Info</h4>
+          <ul class="links">
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="links">
+            <li><a href="#">Aerospace</a></li>
+            <li><a href="#">Railways</a></li>
+            <li><a href="#">Industrial</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul class="links">
+            <li><a href="#">UH60 Parts</a></li>
+            <li><a href="#">Hercules C-130 Parts</a></li>
+            <li><a href="#">Railway Traction Gear</a></li>
+            <li><a href="#">Turbochargers</a></li>
+            <li><a href="#">Industrial Gears</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4><i class="fa-solid fa-map-marker-alt"></i>Location</h4>
+
+          <p>
+            <span>7115 Rexwood Rd Unit#21,</span> <br />
+            Mississauga, ON <br />
+            L4T 4L3 <br />
+            Canada
+          </p>
+          <div class="email">
+            <p class="email1">raftaar.1277@gmail.com</p>
+            <button onclick="copyEmail()">copy</button>
+          </div>
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      function resetForm() {
+        // Get the form element
+        var form = document.getElementById("myForm");
+
+        // Reset the form
+        form.reset();
+
+        // Prevent the default form submission behavior
+        return false;
+      }
+    </script>
+  </body>
+</html>

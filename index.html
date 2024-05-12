@@ -44,11 +44,14 @@
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
     <script src="js/sendEmail.js" defer></script>
 
     <title>spareSmart</title>
   </head>
   <body>
+    <!-- <div class="lds-ripple"><div></div><div></div></div> -->
+    <div class="overlay">
     <header>
       <div class="navbar">
         <div class="logo">
@@ -330,22 +333,24 @@
             </div>
           </div>
 
-          <div class="form">
-            <form action="/submit_form" method="post">
+            <div class="form">
+            <form action="https://api.web3forms.com/submit" method="POST" id="myForm" onsubmit="resetForm()">
+
+              <input type="hidden" name="access_key" value="7217601e-4bc0-438c-8513-3a4f204a180c">
               <!-- Added action attribute -->
-              <input type="text" name="name" placeholder="Name" required />
+              <input class="name1" type="text" name="name" placeholder="Name" required />
               <!-- Added name attribute -->
-              <select name="service" id="service" required>
+              <select class="service1" name="service" id="service" required>
                 <option value="" disabled selected>Select a Service</option>
                 <option value="aerospace">Aerospace</option>
                 <option value="railways">Railways</option>
                 <option value="industrial">Industrial</option>
               </select>
-              <input type="email" name="email" placeholder="Email" required />
+              <input class="email1" type="email" name="email" placeholder="Email" required />
               <!-- Added name attribute -->
-              <input type="tel" name="phone" placeholder="Phone" required />
+              <input class="phone1" type="tel" name="phone" placeholder="Phone" required />
               <!-- Added name attribute, changed type to "tel" for phone numbers -->
-              <button class="full-rounded button" type="submit">
+              <button class="full-rounded button" type="submit" onclick="sendEmail()">
                 <!-- Added type="submit" to the button -->
                 <span>Submit</span>
                 <div class="border full-rounded"></div>
@@ -403,5 +408,21 @@
         </div>
       </div>
     </section>
+  </div>
   </body>
+
+  <script>
+    const name1 = document.querySelector(".name1");
+    const service1 = document.querySelector(".service1");
+    const email1 = document.querySelector(".email1");
+    const phone1 = document.querySelector(".phone1");
+
+    function resetForm() {
+      name1.value = "";
+      service1.value = "";
+      email1.value = "";
+      phone1.value = "";
+    }
+    
+  </script>
 </html>
