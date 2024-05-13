@@ -118,7 +118,7 @@
   width: 100%;
 }
 .dropdown a:active {
-  color: #082548;
+  color: #fff;
 }
 .dropdown a .button {
   display: flex;
@@ -128,7 +128,7 @@
   padding: 0.8rem;
   text-align: center;
   font-size: 1rem;
-  color: #060606;
+  color: #fff;
   text-decoration: none;
   background: #252829;
   border: none;
@@ -1475,10 +1475,10 @@
   height: auto;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .breadcrumbs .breadcrumb .text {
     top: 40%;
-    left: 13%;
+    left: 10%;
   }
   .breadcrumbs .breadcrumb .text h3 {
     font-size: 1.5rem;
@@ -1495,10 +1495,10 @@
     padding: 0.7rem;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .breadcrumbs .breadcrumb .text {
     top: 40%;
-    left: 10%;
+    left: 13%;
   }
   .breadcrumbs .breadcrumb .text h3 {
     font-size: 1.5rem;
@@ -1754,7 +1754,7 @@
   background-color: #fff;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
 }
 .quote .container form h2 {
   font-size: 2rem;
@@ -1774,17 +1774,15 @@
 .quote .container form .form-group input,
 .quote .container form .form-group textarea {
   width: 100%;
-  padding: 0.8rem;
+  height: 100%;
+  padding: 0 15px;
   font-size: 1rem;
-  border: 1px solid #a8a8a8;
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.05);
-}
-.quote .container form .form-group input:focus,
-.quote .container form .form-group textarea:focus {
+  border: none;
   outline: none;
-  border-color: #082548;
-  background-color: #fff;
+  border-radius: 6px;
+  background: rgba(37, 40, 41, 0.04);
+  resize: none;
+  font-family: "Montserrat", sans-serif;
 }
 .quote .container form .form-group input::-moz-placeholder, .quote .container form .form-group textarea::-moz-placeholder {
   color: #afafb6;
@@ -1792,6 +1790,11 @@
 .quote .container form .form-group input::placeholder,
 .quote .container form .form-group textarea::placeholder {
   color: #afafb6;
+}
+.quote .container form .form-group input:focus,
+.quote .container form .form-group textarea:focus {
+  background-color: #fff;
+  border: 2px solid #082548;
 }
 .quote .container form button {
   display: inline-block;
@@ -1823,34 +1826,27 @@
     padding: 1rem;
   }
   .quote .container form {
+    padding: 1rem;
     grid-template-columns: 1fr;
-  }
-  .quote .container form .form-group label {
-    font-size: 1rem;
-  }
-  .quote .container form .form-group input,
-  .quote .container form .form-group textarea {
-    padding: 0.8rem;
-    font-size: 0.9rem;
   }
   .quote .container form button {
     width: 30%;
     padding: 1rem;
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 @media screen and (max-width: 426px) {
+  .quote .container form {
+    padding: 0rem;
+  }
   .quote .container form .form-group label {
     font-size: 0.9rem;
   }
-  .quote .container form .form-group input,
-  .quote .container form .form-group textarea {
-    padding: 0.65rem;
-    font-size: 0.8rem;
-  }
   .quote .container form button {
     padding: 1rem;
-    font-size: 0.8rem;
+    font-size: 1rem;
+    text-align: center;
+    width: 50%;
   }
 }
 @media screen and (max-width: 375px) {
@@ -1861,8 +1857,9 @@
   }
   .quote .container form button {
     padding: 1rem;
-    font-size: 0.7rem;
+    font-size: 0.9rem;
     text-align: center;
+    width: 50%;
   }
 }
 

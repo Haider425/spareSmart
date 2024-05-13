@@ -23,7 +23,7 @@
       background-color: #fff;
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-gap: 1rem;
+      grid-gap: 1.5rem;
 
       h2 {
         font-size: 2rem;
@@ -45,20 +45,23 @@
         input,
         textarea {
           width: 100%;
-          padding: 0.8rem;
+          height: 100%;
+          padding: 0 15px;
           font-size: 1rem;
-          border: 1px solid #a8a8a8;
-          border-radius: 5px;
-          background-color: rgba(0, 0, 0, 0.05);
-
-          &:focus {
-            outline: none;
-            border-color: #082548;
-            background-color: #fff;
-          }
-
+          border: none;
+          outline: none;
+          border-radius: 6px;
+          background: rgba(37, 40, 41, 0.04);
+          resize: none;
+          font-family: 'Montserrat', sans-serif;
           &::placeholder {
             color: #afafb6;
+            
+          }
+
+          &:focus {
+              background-color: #fff;
+            border: 2px solid #082548;
           }
         }
       }
@@ -98,24 +101,26 @@
       padding: 1rem;
 
       form {
+        padding: 1rem;
         grid-template-columns: 1fr; // Change grid layout to a single column
 
-        .form-group {
-          label {
-            font-size: 1rem;
-          }
+        // .form-group {
+        //   label {
+        //     font-size: 1rem;
+        //   }
 
-          input,
-          textarea {
-            padding: 0.8rem;
-            font-size: 0.9rem;
-          }
-        }
+        //   input,
+        //   textarea {
+        //     padding: 0.8rem;
+        //     font-size: 0.9rem;
+        //   } 
+        // }
 
         button {
           width: 30%; // Make the button full-width
           padding: 1rem;
-          font-size: 0.9rem;
+          font-size: 1rem;
+
         }
       }
     }
@@ -125,21 +130,27 @@
   @media screen and (max-width: 426px) {
     .container {
       form {
+        padding: 0rem;
         .form-group {
           label {
             font-size: 0.9rem;
           }
 
-          input,
-          textarea {
-            padding: 0.65rem;
-            font-size: 0.8rem;
-          }
+          // input,
+          // textarea {
+          //   padding: 0.65rem;
+          //   font-size: 0.8rem;
+          // }
         }
 
         button {
           padding: 1rem;
-          font-size: 0.8rem;
+          font-size: 1rem;
+          text-align: center;
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+          width: 50%;
         }
       }
     }
@@ -159,8 +170,12 @@
     
         button {
             padding: 1rem;
-            font-size: 0.7rem;
+            font-size: 0.9rem;
             text-align: center;
+            // display: flex;
+            // justify-content: center;
+            // align-items: center;
+            width: 50%;
         }
         }
     }

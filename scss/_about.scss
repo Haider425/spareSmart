@@ -116,12 +116,14 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+
+
+@media screen and (max-width: 1024px) {
   .breadcrumbs {
     .breadcrumb {
       .text {
         top: 40%;
-        left: 13%;
+        left: 10%;
         h3 {
           font-size: 1.5rem;
           margin-top: 1rem;
@@ -143,12 +145,12 @@
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .breadcrumbs {
     .breadcrumb {
       .text {
         top: 40%;
-        left: 10%;
+        left: 13%;
         h3 {
           font-size: 1.5rem;
           margin-top: 1rem;
