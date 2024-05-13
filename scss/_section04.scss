@@ -11,6 +11,7 @@
         height: 100%;
         padding: 1rem;
         justify-content: center;
+        align-items: center;
 
         .text{
             width: 75%;
@@ -19,7 +20,7 @@
             align-items: flex-start;
             flex-direction: column;
             padding: 1rem;
-            padding-left: 5rem;
+            padding-left: 3rem;
 
             .title{
                 font-size: 1.2rem;

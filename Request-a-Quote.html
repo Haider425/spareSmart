@@ -72,7 +72,7 @@
             <li><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
-        <button class="button">Request a Quote</button>
+       <a href="Request-a-Quote.html"><button class="button">Request a Quote</button></a> 
 
         <div class="toggle_btn">
           <i class="fa-solid fa-bars"></i>
@@ -84,90 +84,79 @@
         <li><a href="about.html">About</a></li>
         <li><a href="services.html">Services</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <button class="button">Request a Quote</button>
+        <a href="Request-a-Quote.html"><button class="button">Request a Quote</button></a>
       </div>
     </header>
 
     <section class="breadcrumbs">
       <div class="breadcrumb">
         <div class="image">
-          <img src="images/officeImg.jpg" alt="about" />
+          <img src="images/requestImg.jpg" alt="Request" />
         </div>
         <div class="text">
-          <a href="index.html">Home</a> > <a href="about.html">About</a>
-          <h3>About Us</h3>
+          <a href="index.html">Home</a> > <a href="Request-a-Quote.html">Request a quote</a>
+          <h3>Quotation</h3>
         </div>
       </div>
     </section>
 
-    <section class="aboutSection">
-      <div class="container">
-        <div class="text">
-          <div class="description">
-            <p>
-              Welcome to [Your Company Name], your premier Canadian supplier
-              specializing in aerospace, railway, and industrial spare parts.
-              With over a decade of industry expertise, we've built a reputation
-              for delivering top-quality components precisely when you need
-              them.<br /><br />
-
-              Reliability is paramount in maintaining smooth operations, and our
-              dedicated team ensures timely delivery of high-quality parts for
-              maintenance, repairs, or upgrades. We understand the urgency of
-              your needs and strive to exceed your expectations with every
-              order.<br /><br />
-
-              Our extensive network of trusted suppliers allows us to offer
-              competitive prices without compromising on quality. Rigorous
-              quality control measures are in place to ensure that every part
-              meets the highest industry standards, providing you with peace of
-              mind.<br /><br />
-
-              Whether you operate in the aerospace, railway, or industrial
-              sectors, we have the expertise and inventory to meet your specific
-              requirements. From basic nuts and bolts to intricate machinery
-              components, our comprehensive inventory caters to diverse
-              needs.<br /><br />
-
-              Customer satisfaction is our priority. We pride ourselves on
-              providing personalized service and responsive support, ensuring a
-              seamless experience from inquiry to delivery.
-              Don't let downtime disrupt your operations. Contact us today and
-              discover how [Your Company Name] can be your trusted partner for
-              all your spare parts needs, keeping your business moving forward
-              smoothly.
-            </p>
-          </div>
+    <section class="quote">
+        <div class="container">
+          <form  action="https://api.web3forms.com/submit"
+          method="POST"
+          id="myForm"
+          onsubmit="resetForm()">
+            <h2>Request a Quote</h2>
+            <input
+            type="hidden"
+            name="access_key"
+            value="7217601e-4bc0-438c-8513-3a4f204a180c"
+          />
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Full Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company</label>
+              <input type="text" id="company" name="company" placeholder="Cmpany Name" required>
+            </div>
+            <div class="form-group">
+              <label for="partNo">Part No</label>
+              <input type="text" id="partNo" name="partNo" placeholder="Part #" required>
+            </div>
+            <div class="form-group">
+              <label for="nsn">Nsn Number</label>
+              <input type="text" id="nsn" name="nsn" placeholder="Nsn #" required>
+            </div>
+            <div class="form-group">
+              <label for="quantity">Quantity</label>
+              <input type="number" id="quantity" name="quantity" placeholder="Quantity" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Description</label>
+              <textarea id="message" name="message" placeholder="Description" required></textarea>
+            </div>
+            <button type="submit" class="button">Submit</button>
+          </form>
         </div>
-        <div class="image">
-          <img src="images/aboutImg.jpg" alt="about" />
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="inquiry">
-      <div class="container">
-        <div class="text">
-          <div class="title">
-            <h2>PLEASE SEND US YOUR INQUIRY</h2>
-          </div>
-          <div class="description">
-            <p>WE WILL GET BACK TO YOU WITH OUR BEST POSSIBLE QUOTE.</p>
-          </div>
-        </div>
-        <button class="full-rounded button">
-          <span>Contact</span>
-          <div class="border full-rounded"></div>
-        </button>
-      </div>
-    </section>
+    
 
     <section class="footer">
       <div class="footer-row">
         <div class="footer-col">
           <h4>Info</h4>
           <ul class="links">
-            <li><a href="#">About Us</a></li>
+            <li><a href="about.html">About Us</a></li>
           </ul>
         </div>
         <div class="footer-col">

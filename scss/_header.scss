@@ -129,6 +129,14 @@
       }
     }
 
+    a{
+      text-decoration: none;
+      color: $color-font;
+      font-size: 1.125rem;
+      width: 100%;
+      &:active{
+        color: $color-trinary;
+      }
     .button{
       @include flex;
       justify-content: center;
@@ -145,7 +153,9 @@
       &:active{
         background: $color-trinary;
       }
+
     }
+  }
     
 
   }

@@ -111,7 +111,16 @@
 .dropdown li a:active {
   color: #082548;
 }
-.dropdown .button {
+.dropdown a {
+  text-decoration: none;
+  color: #060606;
+  font-size: 1.125rem;
+  width: 100%;
+}
+.dropdown a:active {
+  color: #082548;
+}
+.dropdown a .button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,7 +135,7 @@
   cursor: pointer;
   width: 100%;
 }
-.dropdown .button:active {
+.dropdown a .button:active {
   background: #082548;
 }
 
@@ -555,7 +564,7 @@
 .about .container .content button {
   font-size: 16px;
   position: relative;
-  margin: auto;
+  margin-top: 1rem;
   padding: 1em 2.5em 1em 2.5em;
   border: none;
   background: #082548;
@@ -997,6 +1006,7 @@
   height: 100%;
   padding: 1rem;
   justify-content: center;
+  align-items: center;
 }
 .inquiry .container .text {
   width: 75%;
@@ -1005,7 +1015,7 @@
   align-items: flex-start;
   flex-direction: column;
   padding: 1rem;
-  padding-left: 5rem;
+  padding-left: 3rem;
 }
 .inquiry .container .text .title {
   font-size: 1.2rem;
@@ -1719,10 +1729,146 @@
     width: 40%;
   }
 }
+.quote {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+.quote .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.quote .container form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  border-radius: 5px;
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem;
+}
+.quote .container form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  grid-column: 1/-1;
+}
+.quote .container form .form-group {
+  margin-bottom: 1rem;
+}
+.quote .container form .form-group label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+.quote .container form .form-group input,
+.quote .container form .form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #a8a8a8;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.quote .container form .form-group input:focus,
+.quote .container form .form-group textarea:focus {
+  outline: none;
+  border-color: #082548;
+  background-color: #fff;
+}
+.quote .container form .form-group input::-moz-placeholder, .quote .container form .form-group textarea::-moz-placeholder {
+  color: #afafb6;
+}
+.quote .container form .form-group input::placeholder,
+.quote .container form .form-group textarea::placeholder {
+  color: #afafb6;
+}
+.quote .container form button {
+  display: inline-block;
+  margin-top: 12px;
+  grid-column: 1/-1;
+  width: 20%;
+  padding: 0.8rem;
+  margin: 1rem 0;
+  border: none;
+  background: #082548;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.1s linear;
+  border-radius: 10px;
+  align-self: center;
+}
+.quote .container form button:active {
+  transform: scale(0.95);
+}
+.quote .container form button:hover {
+  background: #1A2634;
+}
+@media screen and (max-width: 768px) {
+  .quote {
+    padding: 1rem;
+  }
+  .quote .container {
+    padding: 1rem;
+  }
+  .quote .container form {
+    grid-template-columns: 1fr;
+  }
+  .quote .container form .form-group label {
+    font-size: 1rem;
+  }
+  .quote .container form .form-group input,
+  .quote .container form .form-group textarea {
+    padding: 0.8rem;
+    font-size: 0.9rem;
+  }
+  .quote .container form button {
+    width: 30%;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 426px) {
+  .quote .container form .form-group label {
+    font-size: 0.9rem;
+  }
+  .quote .container form .form-group input,
+  .quote .container form .form-group textarea {
+    padding: 0.65rem;
+    font-size: 0.8rem;
+  }
+  .quote .container form button {
+    padding: 1rem;
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  .quote .container form .form-group input,
+  .quote .container form .form-group textarea {
+    padding: 0.5rem;
+    font-size: 0.7rem;
+  }
+  .quote .container form button {
+    padding: 1rem;
+    font-size: 0.7rem;
+    text-align: center;
+  }
+}
+
 .footer {
   max-width: 100%;
   background: #10182F;
-  border-radius: 6px;
   margin: 0 auto;
   padding: 50px 50px;
 }
