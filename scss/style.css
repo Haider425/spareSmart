@@ -709,7 +709,7 @@
   flex-wrap: wrap;
 }
 .services .parallax {
-  background-image: url("../images/parallaxImg.jpg") !important;
+  background-image: url("../images/parallaxImg1.jpg") !important;
   min-height: 500px; /* Adjust the height as needed */
   background-attachment: fixed;
   background-position: center;
