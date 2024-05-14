@@ -36,6 +36,8 @@
       a {
         text-decoration: none; /* Remove underline from links */
         color: #fff; /* Set link color */
+        margin-right: 0.3rem;
+        margin-left: 0.3rem;
 
         &:hover {
           color: $color-primary; /* Change link color on hover */
@@ -91,9 +93,12 @@
         text-align: left;
         p {
           font-family: "Open Sans", sans-serif;
-          font-size: 0.9rem;
-          color: #243238;
-          font-weight: lighter;
+          font-size: 1rem;
+          color: #101010;
+          font-weight: 400;
+          letter-spacing: 0.5px;
+          margin-bottom: 1rem;
+          color: $color-secondary;
           line-height: 1.625rem;
         }
       }
@@ -186,6 +191,7 @@
     }
   }
   .aboutSection {
+    padding: 1rem;
     .container {
       flex-direction: column;
       .text {
@@ -198,6 +204,7 @@
     }
   }
 }
+
 
 @media screen and (max-width: 376px) {
   .breadcrumbs {
@@ -225,3 +232,19 @@
     }
   }
 }
+
+@media screen and (max-width: 320px) {
+  .breadcrumbs {
+    .breadcrumb {
+      .text {
+        top: 45%;
+        left: 27%;
+        h3 {
+          font-size: 1.5rem;
+          margin-top: 1rem;
+        }
+      }
+    }
+  }
+}
+

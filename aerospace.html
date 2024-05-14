@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="icon" href="images/tabIcon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="scss/style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://smtpjs.com/v3/smtp.js" defer></script>
+    <script src="js/sendEmail.js" defer></script>
+
+    <title>spareSmart</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="images/spareSmart_transparent1.png" alt="spareSmart"
+          /></a>
+        </div>
+        <nav>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="Request-a-Quote.html"
+          ><button class="button">Request a Quote</button></a
+        >
+
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <a href="Request-a-Quote.html"
+          ><button class="button">Request a Quote</button></a
+        >
+      </div>
+    </header>
+
+    <section class="breadcrumbs">
+      <div class="breadcrumb">
+        <div class="image">
+          <img src="images/planeImg1.jpg" alt="plane" />
+        </div>
+        <div class="text">
+          <a href="index.html">Home</a> > <a href="services.html">Services</a> >
+          <a href="aerospace.html">Aerospace</a>
+          <h3>Aerospace</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="aerospace">
+        <div class="title">
+            <h1>Aerospace</h1>
+          </div>
+          <div class="description">
+            <p>
+              We offer a wide range of aerospace related services such as aircraft
+              parts, railways, and industrial gear.
+            </p>
+          </div>
+      <div class="container">
+        
+      </div>
+    </section>
+
+    <section class="inquiry">
+      <div class="container">
+        <div class="text">
+          <div class="title">
+            <h2>PLEASE SEND US YOUR INQUIRY</h2>
+          </div>
+          <div class="description">
+            <p>WE WILL GET BACK TO YOU WITH OUR BEST POSSIBLE QUOTE.</p>
+          </div>
+        </div>
+        <button class="full-rounded button">
+          <span>Contact</span>
+          <div class="border full-rounded"></div>
+        </button>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="footer-row">
+        <div class="footer-col">
+          <h4>Info</h4>
+          <ul class="links">
+            <li><a href="about.html">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="links">
+            <li><a href="#">Aerospace</a></li>
+            <li><a href="#">Railways</a></li>
+            <li><a href="#">Industrial</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <ul class="links">
+            <li><a href="#">UH60 Parts</a></li>
+            <li><a href="#">Hercules C-130 Parts</a></li>
+            <li><a href="#">Railway Traction Gear</a></li>
+            <li><a href="#">Turbochargers</a></li>
+            <li><a href="#">Industrial Gears</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4><i class="fa-solid fa-map-marker-alt"></i>Location</h4>
+
+          <p>
+            <span>7115 Rexwood Rd Unit#21,</span> <br />
+            Mississauga, ON <br />
+            L4T 4L3 <br />
+            Canada
+          </p>
+          <div class="email">
+            <p class="email1">raftaar.1277@gmail.com</p>
+            <button onclick="copyEmail()">copy</button>
+          </div>
+          <div class="icons">
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-google-plus-g"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
