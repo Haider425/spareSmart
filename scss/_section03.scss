@@ -314,9 +314,11 @@
 @media screen and (max-width: 480px) {
   .services {
     .container {
+      padding: 1.5rem;
       .title {
-        font-size: .9rem;
-        padding: 1rem;
+        font-size: 1rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
         h2 {
           font-weight: bold;
         }

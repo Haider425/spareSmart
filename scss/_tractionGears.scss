@@ -1,0 +1,50 @@
+.breadcrumbs{
+    .breadcrumb{
+        .tractionGearsText{
+            left: 17%;
+        }
+    }
+}
+
+.tractionGears{
+    background-color: #f6f6f6;
+    .tractionGearsContainer{
+        .railwayBox{    
+
+            .railwayOverlay{
+                text-align: center;
+                background: linear-gradient(transparent, rgba(28, 28, 28, 0.8));
+                //backdrop-filter: blur(10px); // frosted glass effect
+                height: 25%!important;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                
+               
+
+            }
+
+
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .breadcrumbs{
+        .breadcrumb{
+            .tractionGearsText{
+                left: 28%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 426px) {
+    .breadcrumbs{
+        .breadcrumb{
+            .tractionGearsText{
+                left: 38%;
+            }
+        }
+    }
+}

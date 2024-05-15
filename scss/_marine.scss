@@ -1,0 +1,65 @@
+.breadcrumbs{
+    .breadcrumb{
+        .marineText{
+            left: 19%;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .breadcrumbs{
+        .breadcrumb{
+            .marineText{
+                left: 19%;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    .breadcrumbs{
+        .breadcrumb{
+            .marineText{
+                left: 25%;
+            }
+        }
+    }
+}
+
+@media(max-width: 426px){
+    .breadcrumbs{
+        .breadcrumb{
+            .marineText{
+                left: 37%;
+            }
+        }
+    }
+}
+
+@media(max-width: 376px){
+    .breadcrumbs{
+        .breadcrumb{
+            .marineText{
+                left: 39%;
+            }
+        }
+    }
+
+    .marineGears{
+        .title{
+            h1{
+                font-size: 25px!important;
+            }
+        }
+    }
+}
+
+.marineGears{
+    .title{
+        h1{
+            font-size: 30px;
+        }
+    }
+}
