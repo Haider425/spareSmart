@@ -45,6 +45,7 @@
   width: 11rem;
   height: auto;
   cursor: pointer;
+  padding: 1rem;
 }
 .navbar nav {
   display: flex;
@@ -2184,6 +2185,7 @@
   border-radius: 6px;
   width: 70%;
   caret-color: #fff;
+  font-size: 0.9rem;
 }
 
 .footer-col .email button {

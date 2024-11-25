@@ -237,7 +237,7 @@ function copyEmail() {
   var tempInput = document.createElement("input");
 
   // Set the value of the temporary input to the email address
-  tempInput.value = "raftaar.1277@gmail.com";
+  tempInput.value = "clientsupport@capitalexcel.ca";
 
   // Append the temporary input to the body
   document.body.appendChild(tempInput);
@@ -255,7 +255,7 @@ function copyEmail() {
   // Alert the user that the email address has been copied
   email.innerHTML = "Email Copied!";
   setTimeout(() => {
-    email.innerHTML = "raftaar.1277@gmail.com";
+    email.innerHTML = "clientsupport@capitalexcel.ca";
   }, 3000); 
 
 }
